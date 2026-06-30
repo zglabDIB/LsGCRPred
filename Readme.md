@@ -3,7 +3,7 @@
 <h2>Introduction</h2>
 
 <p align="center">
-  <img src="assets/arch_git.png" alt="Project Screenshot" width="400">
+  <img src="assets/arch_git.png" alt="Project Screenshot" width="600" height="700">
 </p>
 
 <b>Breast and Ovarian cancer risk prediction models</b> consolidated in a single tool. It looks at lncRNA target gene expression differences between cancer and normal tissues, along with the presence or absence of key variants. Using <b>9 lncRNA-associated SNPs(2 specific to Breast Cancer and 7 specific to Ovarian cancer)</b>, it helps distinguish between high-risk and non-cancerous states.
