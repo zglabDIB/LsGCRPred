@@ -54,7 +54,7 @@ The BAM pre-processing tool <b>Opossum</b> is required for preparing RNA- seq BA
         <pre>cd reference</pre>
     </li>
     <li>
-        Download <b>hg38genome fasta and v49 gtf annotation</b> filesfrom https://www.gencodegenes.org/human/ in this folder<br/>
+        Download <b>hg38 genome fasta and v49 gtf annotation</b> files from https://www.gencodegenes.org/human/ in this folder<br/>
         #fasta
         <pre>
             wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/GRCh38.primary_assembly.genome.fa.gz
