@@ -9,9 +9,8 @@
 <b>Breast and Ovarian cancer risk prediction models</b> consolidated in a single tool. It looks at lncRNA target gene expression differences between cancer and normal tissues, along with the presence or absence of key variants. Using <b>9 lncRNA-associated SNPs(2 specific to Breast Cancer and 7 specific to Ovarian cancer)</b>, it helps distinguish between high-risk and non-cancerous states.
 
 <h2>Pre-requisite</h2>
-The input provided by user should be paired-end RNA-Seq data corresponding to Breast or Ovarian tissue of epithelial origin.<br/>
-The BAM pre-processing tool <b>Opossum</b> is required for preparing RNA-seq BAM files prior to variant calling with <b>Platypus</b>. Both Opossum and Platypus are based on Python 2.7 and is not compatible with Python 3.<br/> 
-A dedicated Conda environment for Python 2.7 with several dependencies is therefore required to run <b>Workflow 1</b>. Please follow the environment setup instructions provided below.<br/>
+The input provided by user should be paired-end RNA-Seg data corresponding to Breast or Ovarian tissue of epithelial origin.<br/>
+The BAM pre-processing tool <b>Opossum</b> is required for preparing RNA- seq BAM files prior to variant calling with <b>Platypus</b>. Opossum is compatible only with Python 2.7; and the original release of Platypus (Python 2.7-compatible) was used throughout this study. (link and instructions provided in <b>Workflow 1</b>). Although a very recent version (May 2026) of <b>Platypus</b> is now available with Python 3 compatibility, the workflow described here is based on the original implementation to ensure reproducibility of the analyses presented in this work.<br/>
 <b>##Note:</b> GATK pipeline can also be utilized. The results highly overlap while Platypus and Opossum are computationally much faster.
 
 <h2>Input Data format</h2>
@@ -40,7 +39,7 @@ A dedicated Conda environment for Python 2.7 with several dependencies is theref
         Download <b>Platypus</b> Variant caller from github and build it.<br/>
         #Platypus requires htslib and Cython (installed in Step 2). Once installation is complete, Platypus.py will be located in ./Platypus/bin/. For any installation issues, refer to the official Platypus GitHub documentation, as setup may vary across systems.
         <pre>
-            git clone https://github.com/andyrimmer/Platypus.git
+            git clone https://github.com/huynguyen250896/Platypus.git
             export CFLAGS="-I$CONDA_PREFIX/include"
             export LDFLAGS="-L$CONDA_PREFIX/lib"
             export CPATH=$CONDA_PREFIX/include
